@@ -6,38 +6,16 @@
 
 @interface UIView (AgLayout)
 
-- (CGPoint)agOrigin;
-- (CGSize)agSize;
-
-- (CGFloat)agX;
-- (CGFloat)agY;
-
-- (CGFloat)agLeft;
-- (CGFloat)agTop;
-- (CGFloat)agRight;
-- (CGFloat)agBottom;
-
-- (CGFloat)agWidth;
-- (CGFloat)agHeight;
-
-- (CGFloat)agCenterX;
-- (CGFloat)agCenterY;
-
-- (void)setAgOrigin:(CGPoint)point;
-- (void)setAgSize:(CGSize)size;
-
-- (void)setAgX:(CGFloat)x;
-- (void)setAgY:(CGFloat)y;
-
-- (void)setAgLeft:(CGFloat)left;
-- (void)setAgTop:(CGFloat)top;
-- (void)setAgRight:(CGFloat)right;
-- (void)setAgBottom:(CGFloat)bottom;
-
-- (void)setAgWidth:(CGFloat)width;
-- (void)setAgHeight:(CGFloat)height;
-
-- (void)setAgCenterX:(CGFloat)centerX;
-- (void)setAgCenterY:(CGFloat)centerY;
+@property(nonatomic, readonly, assign) CGFloat ag_x;
+@property(nonatomic, readonly, assign) CGFloat ag_y;
+@property(nonatomic, readonly, assign) CGFloat ag_left;
+@property(nonatomic, readonly, assign) CGFloat ag_right;
+@property(nonatomic, readonly, assign) CGFloat ag_bottom;
+@property(nonatomic, readonly, assign) CGFloat ag_width;
+@property(nonatomic, readonly, assign) CGFloat ag_height;
+@property(nonatomic, readonly, assign) CGPoint ag_origin;
+@property(nonatomic, readonly, assign) CGSize  ag_size;
+@property(nonatomic, readonly, assign) CGFloat ag_centerX;
+@property(nonatomic, readonly, assign) CGFloat ag_centerY;
 
 @end

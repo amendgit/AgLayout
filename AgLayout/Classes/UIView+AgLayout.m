@@ -7,121 +7,52 @@
 
 @implementation UIView (AgLayout)
 
-- (CGPoint)agOrigin {
+- (CGPoint)ag_origin {
     return self.frame.origin;
 }
 
-- (CGSize)agSize {
+- (CGSize)ag_size {
     return self.frame.size;
 }
 
-- (CGFloat)agX {
+- (CGFloat)ag_x {
     return self.frame.origin.x;
 }
 
-- (CGFloat)agY {
+- (CGFloat)ag_y {
     return self.frame.origin.y;
 }
 
-- (CGFloat)agLeft {
+- (CGFloat)ag_left {
     return self.frame.origin.x;
 }
 
-- (CGFloat)agTop {
+- (CGFloat)ag_top {
     return self.frame.origin.y;
 }
 
-- (CGFloat)agRight {
+- (CGFloat)ag_right {
     return self.frame.origin.x + self.frame.size.width;
 }
 
-- (CGFloat)agBottom {
+- (CGFloat)ag_bottom {
     return self.frame.origin.y + self.frame.size.height;
 }
 
-- (CGFloat)agWidth {
+- (CGFloat)ag_width {
     return self.frame.size.width;
 }
 
-- (CGFloat)agHeight {
+- (CGFloat)ag_height {
     return self.frame.size.height;
 }
 
-- (CGFloat)agCenterX {
+- (CGFloat)ag_centerX {
     return self.center.x;
 }
 
-- (CGFloat)agCenterY {
+- (CGFloat)ag_centerY {
     return self.center.y;
 }
-
-- (void)setAgOrigin:(CGPoint)point {
-    CGRect newFrame = self.frame;
-    newFrame.origin = point;
-    self.frame = newFrame;
-}
-
-- (void)setAgSize:(CGSize)size {
-    CGRect newFrame = self.frame;
-    newFrame.size = size;
-    self.frame = newFrame;
-}
-
-- (void)setAgX:(CGFloat)x {
-    CGRect newFrame = self.frame;
-    newFrame.origin.x = x;
-    self.frame = newFrame;
-}
-
-- (void)setAgY:(CGFloat)y {
-    CGRect newFrame = self.frame;
-    newFrame.origin.y = y;
-    self.frame = newFrame;
-}
-
-- (void)setAgLeft:(CGFloat)left {
-    CGRect newFrame = self.frame;
-    newFrame.origin.x = left;
-    self.frame = newFrame;
-}
-
-- (void)setAgTop:(CGFloat)top {
-    CGRect newFrame = self.frame;
-    newFrame.origin.x = top;
-    self.frame = newFrame;
-}
-
-- (void)setAgRight:(CGFloat)right {
-    CGRect newFrame = self.frame;
-    newFrame.origin.x = right - newFrame.size.width;
-    self.frame = newFrame;
-}
-
-- (void)setAgBottom:(CGFloat)bottom {
-    CGRect newFrame = self.frame;
-    newFrame.origin.y = bottom - newFrame.size.height;
-    self.frame = newFrame;
-}
-
-- (void)setAgWidth:(CGFloat)width {
-    CGRect newFrame = self.frame;
-    newFrame.size.width = width;
-    self.frame = newFrame;
-}
-
-- (void)setAgHeight:(CGFloat)height {
-    CGRect newFrame = self.frame;
-    newFrame.size.height = height;
-    self.frame = newFrame;
-}
-
-- (void)setAgCenterX:(CGFloat)centerX {
-    self.center = CGPointMake(centerX, self.center.y);
-}
-
-- (void)setAgCenterY:(CGFloat)centerY {
-    self.center = CGPointMake(self.center.x, centerY);
-}
-
 
 @end
