@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'AgLayout_Example' do
+  pod 'AgLayout', :path => '../'
+
+  target 'AgLayout_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  pod 'FBSnapshotTestCase'
+  end
+end

@@ -1,0 +1,26 @@
+PODS:
+  - AgLayout (0.1.0)
+  - FBSnapshotTestCase (2.1.2):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.2)
+  - FBSnapshotTestCase/Core (2.1.2)
+  - FBSnapshotTestCase/SwiftSupport (2.1.2):
+    - FBSnapshotTestCase/Core
+  - Kiwi (2.4.0)
+
+DEPENDENCIES:
+  - AgLayout (from `../`)
+  - FBSnapshotTestCase
+  - Kiwi
+
+EXTERNAL SOURCES:
+  AgLayout:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AgLayout: d83bb0460154739151be565917a168088b26e929
+  FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+
+PODFILE CHECKSUM: b371071f7d1bc4ac90f93502459a1bdbde265f91
+
+COCOAPODS: 1.0.1
